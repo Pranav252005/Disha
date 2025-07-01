@@ -283,6 +283,58 @@
       0 0 24px rgba(255, 215, 0, 0.4),
       0 0 32px rgba(255, 215, 0, 0.3);
   }
+
+  /* About section: stack vertically and shrink */
+  #about {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .about-glass-box {
+    width: 90vw !important;
+    max-width: 98vw !important;
+    min-height: unset !important;
+    padding: 1.5rem !important;
+  }
+
+  /* IYRAA and TIA BEAUTY sections: stack and shrink */
+  .iyraa-section,
+  .tia-section {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .iyraa-section img,
+  .tia-section img {
+    width: 80vw !important;
+    max-width: 90vw !important;
+    margin-left: 0 !important;
+  }
+
+  .iyraa-section .text-box,
+  .tia-section .text-box {
+    width: 90vw !important;
+    min-width: unset !important;
+    position: static !important;
+    text-align: center !important;
+    padding-right: 0 !important;
+  }
+
+  .iyraa-section span,
+  .tia-section span {
+    font-size: 2rem !important;
+    position: static !important;
+    text-align: center !important;
+    width: 100% !important;
+    left: unset !important;
+    top: unset !important;
+    margin-bottom: 0.5rem !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -323,6 +375,23 @@
       0 0 12px rgba(255, 215, 0, 0.5),
       0 0 18px rgba(255, 215, 0, 0.4),
       0 0 24px rgba(255, 215, 0, 0.3);
+  }
+
+  .about-glass-box {
+    padding: 0.5rem !important;
+    border-radius: 1rem !important;
+  }
+
+  .iyraa-section img,
+  .tia-section img {
+    width: 95vw !important;
+    max-width: 98vw !important;
+  }
+
+  .iyraa-section .text-box,
+  .tia-section .text-box {
+    font-size: 1.1rem !important;
+    padding: 0.5rem !important;
   }
 }
 

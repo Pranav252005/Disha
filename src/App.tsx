@@ -178,14 +178,14 @@ function App() {
       </div>
 
       {/* Page 3: New Section Below About */}
-      <div className="w-full min-h-screen flex items-center justify-between bg-black relative z-10 pt-24 pb-24 px-8">
+      <div className="iyraa-section w-full min-h-screen flex items-center justify-between bg-black relative z-10 pt-24 pb-24 px-8">
         {/* Left: Image */}
         <div className="flex flex-row gap-6 ml-12">
           <img src="/D1.jpg" alt="D1" className="w-[22vw] max-w-md object-cover rounded-2xl" />
           <img src="/D3.jpg" alt="D3" className="w-[22vw] max-w-md object-cover rounded-2xl" />
         </div>
         {/* Right: Floating Text */}
-        <div className="flex flex-col items-end pr-8 z-10 bg-transparent w-[50vw] min-w-[300px]">
+        <div className="text-box flex flex-col items-end pr-8 z-10 bg-transparent w-[50vw] min-w-[300px]">
           <span
             className="text-[8vw] font-bold tracking-widest mb-2"
             style={{ color: '#e53935', fontFamily: 'Montas', lineHeight: 1 }}
@@ -202,11 +202,11 @@ function App() {
       </div>
 
       {/* Page 4: TIA BEAUTY Section */}
-      <div className="w-full min-h-screen flex items-center justify-between bg-black relative z-10 pt-24 pb-24 px-8">
+      <div className="tia-section w-full min-h-screen flex items-center justify-between bg-black relative z-10 pt-24 pb-24 px-8">
         {/* Left: Empty for spacing */}
         <div></div>
         {/* Right: Text and Images */}
-        <div className="flex flex-col items-end pr-8 w-[50vw] min-w-[300px]">
+        <div className="text-box flex flex-col items-end pr-8 w-[50vw] min-w-[300px]">
           <span
             className="text-[7vw] font-bold tracking-widest mb-2 absolute left-[4%] top-[40%]"
             style={{ color: '#AA6C39', fontFamily: 'Montserrat, Arial, sans-serif', lineHeight: 1 }}
