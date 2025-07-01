@@ -219,7 +219,7 @@ function App() {
           >
             DIGITAL AD COMPANION
           </span>
-          <div className="scroll-images flex flex-row gap-6 ml-12">
+          <div className="mobile-tia-images scroll-images flex flex-row gap-6 ml-12">
             <img src="/D9.jpg" alt="D9" className="w-[22vw] max-w-xs object-cover rounded-2xl" />
             <img src="/D11.jpg" alt="D11" className="w-[22vw] max-w-xs object-cover rounded-2xl" />
           </div>
