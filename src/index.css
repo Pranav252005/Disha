@@ -382,16 +382,40 @@
     border-radius: 1rem !important;
   }
 
+  /* Enable horizontal scroll for images in iyraa-section and tia-section */
+  .iyraa-section .scroll-images,
+  .tia-section .scroll-images {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    gap: 1rem !important;
+    width: 100vw !important;
+    padding-bottom: 0.5rem !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
   .iyraa-section img,
   .tia-section img {
-    width: 95vw !important;
-    max-width: 98vw !important;
+    width: 50vw !important;
+    max-width: 50vw !important;
+    flex: 0 0 auto !important;
+  }
+
+  .iyraa-section .text-box span:first-child,
+  .tia-section .text-box span:first-child {
+    font-size: 4.2rem !important;
+  }
+
+  .iyraa-section .text-box span:nth-child(2),
+  .tia-section .text-box span:nth-child(2) {
+    font-size: 0.85rem !important;
   }
 
   .iyraa-section .text-box,
   .tia-section .text-box {
-    font-size: 1.1rem !important;
-    padding: 0.5rem !important;
+    font-size: 2.5rem !important;
+    padding: 0.2rem !important;
   }
 }
 

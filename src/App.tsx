@@ -180,7 +180,7 @@ function App() {
       {/* Page 3: New Section Below About */}
       <div className="iyraa-section w-full min-h-screen flex items-center justify-between bg-black relative z-10 pt-24 pb-24 px-8">
         {/* Left: Image */}
-        <div className="flex flex-row gap-6 ml-12">
+        <div className="scroll-images flex flex-row gap-6 ml-12">
           <img src="/D1.jpg" alt="D1" className="w-[22vw] max-w-md object-cover rounded-2xl" />
           <img src="/D3.jpg" alt="D3" className="w-[22vw] max-w-md object-cover rounded-2xl" />
         </div>
@@ -219,7 +219,7 @@ function App() {
           >
             DIGITAL AD COMPANION
           </span>
-          <div className="flex flex-row gap-6 ml-12">
+          <div className="scroll-images flex flex-row gap-6 ml-12">
             <img src="/D9.jpg" alt="D9" className="w-[22vw] max-w-xs object-cover rounded-2xl" />
             <img src="/D11.jpg" alt="D11" className="w-[22vw] max-w-xs object-cover rounded-2xl" />
           </div>
