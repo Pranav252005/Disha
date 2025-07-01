@@ -421,6 +421,52 @@
     font-size: 2.5rem !important;
     padding: 0.2rem !important;
   }
+
+  .mobile-iyraa {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 1.5rem !important;
+    min-height: 80vh !important;
+  }
+
+  .mobile-iyraa-images {
+    margin-left: 0 !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 0.5rem !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    position: relative !important;
+    top: -2.5rem !important;
+  }
+
+  .mobile-iyraa-text {
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding-right: 0 !important;
+    margin-top: -1.5rem !important;
+  }
+
+  .mobile-tia-center {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 80vh !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .mobile-tia-center-box {
+    align-items: center !important;
+    justify-content: center !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+    width: 100vw !important;
+    min-width: unset !important;
+    position: static !important;
+    text-align: center !important;
+  }
 }
 
 @keyframes glow-pulse {
