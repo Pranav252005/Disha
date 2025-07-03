@@ -66,8 +66,8 @@ function App() {
       {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 z-40 p-10 flex justify-center items-center">
         {/* Small DISHA Title at Top Center */}
-        <span className="mx-auto text-gold font-fantasy text-xl md:text-6xl tracking-widest" style={{ fontFamily: 'Lobster, Pacifico, cursive, fantasy' }}>
-          DISHA
+        <span className="mx-auto text-gold font-fantasy text-xl md:text-6xl tracking-widest text-center" style={{ fontFamily: 'Lobster, Pacifico, cursive, fantasy', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', lineHeight: 1.1 }}>
+          DISHA<br />MAURYA
         </span>
         {/* Hamburger Menu at Top Right */}
         <div className="absolute right-6 top-1/2 -translate-y-1/2 flex items-center">
@@ -156,6 +156,10 @@ function App() {
             />
           </div>
         </div>
+        {/* Model Description Text */}
+        <div className="font-bold text-l text-white mt-4 text-center tracking-wide" style={{ fontFamily: 'Inter, Arial, sans-serif' }}>
+          I am a model who specializes in lifestyle, fashion and commercial shoots.
+        </div>
       </div>
 
       {/* Page 2: About Section */}
@@ -178,50 +182,40 @@ function App() {
       </div>
 
       {/* Page 3: New Section Below About */}
-      <div className="iyraa-section w-full min-h-screen flex items-center justify-between bg-black relative z-10 pt-24 pb-24 px-8 md:flex-row mobile-iyraa">
-        {/* Left: Image */}
-        <div className="scroll-images flex flex-row gap-6 ml-12 mobile-iyraa-images">
-          <img src="/D1.jpg" alt="D1" className="w-[22vw] max-w-md object-cover rounded-2xl" />
-          <img src="/D3.jpg" alt="D3" className="w-[22vw] max-w-md object-cover rounded-2xl" />
+      <div className="iyraa-section w-full min-h-screen flex flex-col items-center bg-black relative z-10 pt-24 pb-24 px-8">
+        <div className="w-full flex justify-center">
+          <h2 className="text-2xl font-bold text-white mb-8 mt-2 text-center">Brands I have worked with</h2>
         </div>
-        {/* Right: Floating Text */}
-        <div className="text-box flex flex-col items-end pr-8 z-10 bg-transparent w-[50vw] min-w-[300px] mobile-iyraa-text">
-          <span
-            className="text-[8vw] font-bold tracking-widest mb-2"
-            style={{ color: '#e53935', fontFamily: 'Montas', lineHeight: 1 }}
-          >
-            IYRAA
-          </span>
-          <span
-            className="text-2xl font-semibold tracking-widest w-full absolute left-[68%] top-[56%]"
-            style={{ color: '#e53935', fontFamily: 'Montserrat, Montas, Arial, sans-serif', letterSpacing: '0.15em' }}
-          >
-            EXCLUSIVE SILVER JEWELLERY
-          </span>
+        {/* Brand Logos */}
+        <div className="flex flex-col items-center w-full px-10 md:px-15">
+          <div className="flex flex-row justify-between w-full max-w-7xl gap-2 md:gap-8 mb-8">
+            <img src="/ACER.jpg" alt="ACER" className="max-h-50 w-auto flex-1 object-contain" style={{ maxWidth: '33%' }} />
+            <img src="/SANGEETHA.jpg" alt="SANGEETHA" className="max-h-50 w-auto flex-1 object-contain" style={{ maxWidth: '33%' }} />
+            <img src="/ROYALOAK.jpg" alt="ROYALOAK" className="max-h-50 w-auto flex-1 object-contain" style={{ maxWidth: '33%' }} />
+          </div>
+          <div className="flex flex-row justify-between w-full max-w-5xl gap-2 md:gap-8">
+            <img src="/TIA.jpg" alt="TIA" className="max-h-40 w-auto flex-1 object-contain" style={{ maxWidth: '49%' }} />
+            <img src="/IYRAA.png" alt="IYRAA" className="max-h-40 w-auto flex-1 object-contain" style={{ maxWidth: '49%' }} />
+          </div>
         </div>
       </div>
 
       {/* Page 4: TIA BEAUTY Section */}
-      <div className="tia-section w-full min-h-screen flex items-center justify-between bg-black relative z-10 pt-24 pb-24 px-8 md:flex-row mobile-tia-center">
-        {/* Left: Empty for spacing */}
-        <div></div>
-        {/* Right: Text and Images */}
-        <div className="text-box flex flex-col items-end pr-8 w-[50vw] min-w-[300px] mobile-tia-center-box">
-          <span
-            className="text-[7vw] font-bold tracking-widest mb-2 absolute left-[4%] top-[40%]"
-            style={{ color: '#AA6C39', fontFamily: 'Montserrat, Arial, sans-serif', lineHeight: 1 }}
-          >
-            TIA BEAUTY
-          </span>
-          <span
-            className="text-3xl font-fantasy mb-6 absolute left-[35%] top-[53%]"
-            style={{ color: '#AA6C39', fontFamily: 'Lobster, Pacifico, cursive, fantasy', letterSpacing: '0.12em' }}
-          >
-            DIGITAL AD COMPANION
-          </span>
-          <div className="mobile-tia-images scroll-images flex flex-row gap-6 ml-12">
-            <img src="/D9.jpg" alt="D9" className="w-[22vw] max-w-xs object-cover rounded-2xl" />
-            <img src="/D11.jpg" alt="D11" className="w-[22vw] max-w-xs object-cover rounded-2xl" />
+      <div className="tia-section w-full min-h-screen flex flex-col items-center justify-center bg-black relative z-10 pt-24 pb-24 px-8 gap-12">
+        <div className="flex flex-row flex-wrap justify-center gap-8 w-full mb-8">
+          <div className="about-glass-box flex items-center justify-center p-4 rounded-3xl shadow-2xl border border-gold" style={{ width: '40vw', maxWidth: '600px', aspectRatio: '16/9', minWidth: '280px' }}>
+            <video src="/RoyalOakV.mp4" autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1.5rem' }} />
+          </div>
+          <div className="about-glass-box flex items-center justify-center p-4 rounded-3xl shadow-2xl border border-gold" style={{ width: '40vw', maxWidth: '600px', aspectRatio: '16/9', minWidth: '280px' }}>
+            <video src="/AcerV.mp4" autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1.5rem' }} />
+          </div>
+        </div>
+        <div className="flex flex-row flex-wrap justify-center gap-8 w-full">
+          <div className="about-glass-box flex items-center justify-center p-4 rounded-3xl shadow-2xl border border-gold" style={{ width: '40vw', maxWidth: '600px', aspectRatio: '16/9', minWidth: '280px' }}>
+            <video src="/SangeethaV.mp4" autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1.5rem' }} />
+          </div>
+          <div className="about-glass-box flex items-center justify-center p-4 rounded-3xl shadow-2xl border border-gold" style={{ width: '40vw', maxWidth: '600px', aspectRatio: '16/9', minWidth: '280px' }}>
+            <video src="/TiaBeautV.mp4" autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1.5rem' }} />
           </div>
         </div>
       </div>
