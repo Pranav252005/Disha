@@ -65,6 +65,14 @@ function App() {
 
   return (
     <div className="relative w-full min-h-screen bg-white overflow-x-hidden">
+      {/* Fixed Hire Me! Button */}
+      <a
+        href="#hireme"
+        className="fixed top-6 left-6 z-50 bg-white text-black font-bold text-lg px-5 py-2 rounded-2xl shadow border border-gray-300 hover:bg-gray-100 transition-all duration-200 cursor-pointer"
+        style={{ fontFamily: 'Inter, Arial, sans-serif' }}
+      >
+        Hire Me!
+      </a>
       {/* Background Shimmer Effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/10 via-transparent to-yellow-600/5 animate-pulse"></div>
@@ -75,7 +83,7 @@ function App() {
       {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 z-40 p-10 flex justify-center items-center">
         {/* Small DISHA Title at Top Center */}
-        <span className="mx-auto text-black font-fantasy text-xl md:text-6xl tracking-widest text-center" style={{ fontFamily: 'Lobster, Pacifico, cursive, fantasy', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', lineHeight: 1.1 }}>
+        <span className="mx-auto text-black font-ranade text-xl md:text-4xl tracking-widest text-center" style={{ fontFamily: 'Lobster, Pacifico, cursive, fantasy', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', lineHeight: 1.1 }}>
           DISHA<br />MAURYA
         </span>
         {/* Hamburger Menu at Top Right */}
@@ -281,8 +289,8 @@ function App() {
       </div>
 
       {/* Page 6: Hire Me Section */}
-      <div className="w-full min-h-screen flex flex-col items-center justify-center bg-white relative z-10 pt-24 pb-24 px-8">
-        <h2 className="text-3xl font-bold text-black mb-8 text-center">Hire Me</h2>
+      <div id="hireme" className="w-full min-h-screen flex flex-col items-center justify-center bg-white relative z-10 pt-24 pb-24 px-8">
+        <h2 className="text-4xl font-bold text-black mb-8 text-center">Hire Me</h2>
         <form
           ref={hireMeForm}
           className="flex flex-col gap-6 w-full max-w-lg bg-white p-8 rounded-2xl shadow-md border border-gray-200"
